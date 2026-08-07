@@ -22,8 +22,8 @@
     */
 
     @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+        font-family: virale;
+        src: url(font/virale.ttf);
     }
 
     @font-face {
@@ -102,9 +102,16 @@
     }
 
     /* navigation section!! */
+   #marquee {
+        height: 50px;
+        background-color: #fcd8ea;
+        /* navbar color */
+        width: 100%;
+    }
+    
     #navbar {
         height: 50px;
-        background-color: #dba1b6;
+        background-color: #c28ea1;
         /* navbar color */
         width: 100%;
     }
@@ -123,7 +130,7 @@
 
     /* navigation links*/
     #navbar li a {
-        color: #fbf5fb;
+        color: #f3eff3;
         /* navbar text color */
         font-weight: 800;
         text-decoration: none;
@@ -155,7 +162,7 @@
     /* this is the color of the main content area,
     between the sidebars! */
     main {
-        background-color: #dba1b6;
+        background-color: #d19aae;
         flex: 1;
         padding: 20px;
         order: 2;
