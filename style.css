@@ -3,50 +3,24 @@
     the images as variables */
 
     :root {
-        --header-image: url('https://i.pinimg.com/736x/f1/c7/91/f1c7914d22e7fadf408f7e25e7dc16e4.jpg');
-        --body-bg-image: url('https://i.pinimg.com/736x/14/dd/70/14dd7014df9273145e7ab62f7576287a.jpg');
+        --header-image: url('assets/sonicotest.png');
+        --body-bg-image: url('assets/test.png');
 
         /* colors */
-        --content: #f5aed3;
-    }
-
-    /* if you have the URL of a font, you can set it below */
-    /* feel free to delete this if it's not your vibe */
-
-    /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
-
-    @font-face {
-        font-family: virale;
-        src: url(font/virale.ttf);
+        --content: #fcdbec;
     }
 
     @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-        font-weight: bold;
+        font-family: "craft";
+        src: url("./fonts/craft.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
     }
 
-    @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-        font-style: italic;
-    }
-
-    @font-face {
-        font-family: Nunito;
-        src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-        font-style: italic;
-        font-weight: bold;
-    }
 
     body {
-        font-family: 'Nunito', sans-serif;
+        font-family: 'craft', sans-serif;
         margin: 0;
         background-color: #08031A;
         /* you can delete the line below if you'd prefer to not use an image */
@@ -91,7 +65,6 @@
 
     #header {
         width: 100%;
-        background-color: #dba1b6;
         /* header color here! */
         height: 500px;
         /* this is only for a background image! */
@@ -102,13 +75,13 @@
     }
 
     /* navigation section!! */
-   #marquee {
+    #marquee {
         height: 50px;
         background-color: #fcd8ea;
         /* navbar color */
         width: 100%;
     }
-    
+
     #navbar {
         height: 50px;
         background-color: #c28ea1;
@@ -167,6 +140,14 @@
         padding: 20px;
         order: 2;
     }
+
+    div.sticky {
+        position: sticky;
+        top: 0;
+        padding: 50px;
+        font-size: 20px;
+    }
+
 
     /* what's this "order" stuff about??
     allow me to explain!
